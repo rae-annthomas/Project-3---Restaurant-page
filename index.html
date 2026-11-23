@@ -1,0 +1,40 @@
+ <!--We do not need to put a script tag in this file! HtmlWebpackPlugin will automatically 
+ add our output bundle as a script tag. We wouldn’t want to double up by including our own
+  one as well! Inside our webpack.config.js, we can add a few little bits.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script defer src="main.js"></script></head>
+<body>
+    <header>   
+        <div id="logoContainer">
+        <img src="da143b961b5af50e0efc.png" alt="Logo" id="logoImage"/>
+        <h1 id="logo">Tokyo Roll</h1>
+        </div>
+        <nav>
+            <button id="homeBtn">Home</button>
+            <button id="menuBtn">Menu</button>
+            <button id="aboutBtn">About</button>   
+            <button id="orderBtn">Order Now</button> 
+        </nav>
+        
+    </header>
+    <div id="content">
+        <!-- <h1>THE BEST PLACE TO EAT SUSHI IN THE CITY</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, iste?</p>
+        <button>Order Now</button>
+        <button>View Menu</button>
+        <img src="" alt="Description of the image">
+        <img src="" alt="Description of the image">
+        <img src="" alt="Description of the image"> -->
+
+    </div>
+
+    <footer>
+        <p>© 2024 Tokyo Roll. All rights reserved.</p>  
+    </footer>
+</body>
+</html>
