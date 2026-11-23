@@ -1,6 +1,7 @@
 import sushiImage1 from "./images/homePage/img1.jpg";
 import sushiImage2 from "./images/homePage/img2.jpg";
-import sushiImage3 from "./images/homePage/img3.jpg";        
+import sushiImage3 from "./images/homePage/img3.jpg";   
+import {menuLoad} from "./menuPage.js";     
 
 const pageLoad = () => {
     const bodyContent = document.querySelector("#content")
@@ -19,6 +20,11 @@ const pageLoad = () => {
     heading.textContent = "THE BEST PLACE TO EAT SUSHI IN THE CITY";
     description.textContent = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, iste?";
     menuButton.textContent = "View Menu";
+    menuButton.addEventListener('click', ()=>{
+         const content = document.querySelector("#content");
+        content.textContent = "";
+        menuLoad();
+    });
     menuButton.classList.add("homeBtn");
     orderButton.textContent = "Order Now";
     orderButton.setAttribute('id', 'orderBtn');
